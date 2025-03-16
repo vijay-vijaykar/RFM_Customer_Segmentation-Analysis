@@ -1,29 +1,61 @@
-# RFM Analysis for Customer Segmentation and profiling using Excel.
-RFM Analysis enables businesses to categorize customers into distinct segments, unveiling hidden trends and preferences that might otherwise remain obscured.
+# 📊 RFM Analysis for Customer Segmentation & Profiling using Excel  
+
+## 📌 Project Overview  
+RFM (Recency, Frequency, Monetary) Analysis enables businesses to segment customers based on their purchasing behavior. This helps in identifying customer trends, improving marketing strategies, and enhancing customer retention.  
+
+In this project, we analyze customer purchase data from a grocery store to classify customers into different segments such as **Top Customers, Loyal Customers, At-Risk Customers, and Immediate Attention.**  
+
+## 📂 Data Source  
+- The dataset is sourced from **Kaggle** and contains **2,240 customers** with **27 features** related to their purchasing behavior.  
+
+## 🛠 Tools Used  
+- **Microsoft Excel**: Data cleaning, analysis, and visualization.  
+
+## 🔍 Methodology  
+
+### **1️⃣ Data Cleaning**  
+- Handle missing values and remove duplicates.  
+- Correct any spelling errors or inconsistencies.  
+
+### **2️⃣ Data Transformation**  
+- Compute **customer age** using the year of birth.  
+- Calculate **total number of children per customer**.  
+- Determine **total monetary value spent** and **purchase frequency** for each customer.  
+
+### **3️⃣ Feature Selection**  
+- Extract only relevant columns for RFM analysis.  
+
+### **4️⃣ Percentrank Calculation**  
+- Normalize **Monetary Value, Frequency, and Recency** using **Percentrank function**.  
+
+### **5️⃣ RFM Score Calculation**  
+- Compute **RFM score** by summing the three Percentrank values.  
+- Apply **Percentrank.inc function** to further normalize the RFM score.  
+
+### **6️⃣ Customer Segmentation**  
+- Create a **Customer Segment column** using **VLOOKUP** based on RFM scores.  
+
+### **7️⃣ Pivot Table Analysis**  
+- Count customers in each segment (**Top Customers, Loyal Customers, At-Risk, Immediate Attention**).  
+- Create a **customer profile table** summarizing:  
+  - Percentage of each customer segment.  
+  - Average **age, income, and number of children**.  
+  - Most common **education level and marital status**.  
+
+### **8️⃣ Visualization & Dashboard**  
+- Create **pivot charts** to display customer segmentation results.  
+- Add **KPIs** to highlight key insights.  
+- Provide a **demographic breakdown** of top customers and at-risk customers.  
+
+## 📊 Key Insights  
+- **Top Customers** have higher purchase frequency and monetary value.  
+- **Loyal Customers** show consistent spending behavior.  
+- **At-Risk Customers** show reduced engagement and need targeted marketing.  
+- **Immediate Attention** customers may require special offers or re-engagement strategies.  
+
+## 📁 Repository Contents  
+- **Excel File**: Contains data, analysis, and pivot tables.  
+- **Dashboard Screenshot**: A snapshot of the final analysis.  
+- **ReadMe.md**: Documentation of the project.  
+
  
-## Data Source
-In this analysis, we’ll employ a dataset sourced from Kaggle, encompassing data on 2,240 customers and their purchasing behavior at a grocery store. The dataset comprises 27 columns, each containing valuable insights about each customers.
-
-## Tool
-We’ll utilize Microsoft Excel as our primary data tool for the process of data cleaning, analysis, and visualization.
-
-## Methodology
-### Step-by-step for RFM Analysis
-**1. Data Cleaning:** This involves imputing missing values, rectifying inaccuracies in spellings, and eliminating duplicate entries from the7 dataset
-
-**2. Data Transformation:** Creating new columns based on existing columns, Calculate the customer’s age based on their year of birth; create a new column for the total number of children; Calculate the total monetary value spent by each customer; and the frequency (number of purchases)for each customer.
-
-**3. Feature Selection:** Selecting the precise data fields from the dataset that hold relevance and significance for the analysis at hand.
-
-**4. Percentrank:** Create a new column for Percentrank for Monetary Value, Frequency, and Recency to normalize these metrics.
-
-**5. Create RFM Score:** Calculate an RFM score based on the Percentrank values, summing the three columns created in the previous step, and create a new column for Percentrank.inc for the RFM score to segment customers based on their combined RFM values.
-
-**6. Customer Segmentation:** Create a new column called “Customer Segment” and segment customers based on the RFM score using VLOOKUP.
-
-**7. Pivot Table:** Create a pivot chart displaying the count of customers in each segment (Top customers, Loyal customers, At-risk, and immediate attention). create a customer profile table that shows all four customer segment and the percentage of customer segment, average age, average income, average number of children, most common Education and Marital status
-
-**8. Visualization:** Create visualizations that explain each segment and add key performance indicators (KPIs). Include demographic values (average age, income, number of children, marital status) for the top customers and the “Immediate Attention” segment to understand customer profiles better.
-
-
-
